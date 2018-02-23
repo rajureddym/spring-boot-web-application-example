@@ -25,7 +25,7 @@ pipeline {
                 steps {
            	   sh '''
                        sudo docker build -t spring-boot-docker:${BUILD_NUMBER} ${WORKSPACE} 
-                       sudo docker run -p 8889:8080 spring- boot-docker:${BUILD_NUMBER} 
+                       sudo docker run -p 8889:8080 spring-boot-docker:${BUILD_NUMBER} 
                    '''         
                 }  
            }
